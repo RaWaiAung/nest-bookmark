@@ -72,8 +72,6 @@ export class AuthService {
         'Credentials incorrect',
       );
 
-    // send back the user
-    delete user.hash;
     return this.signToken(user.id, user.email);
   }
 
